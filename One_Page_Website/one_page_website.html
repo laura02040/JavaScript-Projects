@@ -1,0 +1,120 @@
+<!Doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Photo Gallery Paterns</title>
+<link rel="stylesheet" href="./CSS/one_page_website.css">
+</head>
+<body>
+<ul>
+<a href="#home" id="link"><li> HOME</li></a>
+<a href="#images" id="link"><li> IMAGES</li></a>
+<a href="#videos" id="link"><li>VIDEOS</li></a>
+<a href="#contact" id="link"><li> CONTACT </li></a>
+<a href="#about" id="link"><li>ABOUT</li></a>
+</ul>
+<!---end nav--->
+<div id="home">
+<h1> Welcome to Photo studio </h1>
+<p><b> Images</b></p>
+</div>
+<!---end home--->
+<div id="images">
+    <h1> Images of Photos </h1>
+
+    <div class="row">
+      <div class="column">
+        <img src="./img/attraction.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="./img/bridge.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+      </div>
+      <div class="column">
+        <img src="./img/castle.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+      </div>
+    </div>
+    
+    <div id="myModal" class="modal">
+      <span class="close cursor" onclick="closeModal()">&times;</span>
+      <div class="modal-content">
+    
+        <div class="mySlides">
+          <div class="numbertext">1 /3</div>
+          <img src="./img/attraction.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">2 / 3</div>
+          <img src="./img/bridge.jpg" style="width:100%">
+        </div>
+    
+        <div class="mySlides">
+          <div class="numbertext">3 / 3</div>
+          <img src="./img/castle.jpg" style="width:100%">
+        </div>
+        
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+    
+    
+        <div class="column">
+          <img class="demo cursor" src="./img/attraction.jpg" style="width:100%" onclick="currentSlide(1)" alt="Nature and sunrise">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./img/bridge.jpg" style="width:100%" onclick="currentSlide(2)" alt="Snow">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="./img/castle.jpg" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+        </div>
+        </div>
+      </div>
+    </div>
+    
+
+
+          
+
+
+<div id="videos">
+    <h1> Videos of Photo Paterns</h1>
+    
+    <p><b> Paterns examples video</b></p>
+    <iframe width="560" height="315" src="https://youtu.be/Nf9leC8nktk?si=SPXe-zB6a-vwLNPT" title="Youtube video player" frameborder="0"
+    allow="accelerometer"; autoplay; clipboard-white; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <p><b> Lines Photography </b></p>
+    <iframe width="560" height=\"315" src="https://youtu.be/-Y3vL7GAyIc?si=6KAE4NvDbZFyM93l" title="Youtube video player" frameborder="0"
+    allow="accelerometer"; autoplay; clipboard-white; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <p><b> Dramatic Portraiture</b></p>
+    <iframe width="560" height="315" src="https://youtu.be/mi8XiGKGU3s?si=QTdFLv2WegkZ75IK" title="Youtube video player" frameborder="0"
+    allow="accelerometer"; autoplay; clipboard-white; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <hr>
+</div>
+<div id="contact">
+    <h1> Contact us!</h1>
+    <p> Please provide us with your basic contact information.</p>
+    <div>
+<form action="" method="post">
+<input class="rsvp" type="text" value="First name">
+<input class="rsvp" type="text" value="Last name">
+<input class="rsvp" type="text" value="Email Address">
+<input type="submit" value="Submit">
+</form>
+</div>
+<hr>
+</div>
+
+<div id="about">
+    <div> 
+        www.photopatterns.com &nbsp; - &nbsp; &copy; 2023 &nbsp; - Telephone (00)0050005050
+    </div>
+    </div>
+    <script src="./JS/one_page_website.js"></script>
+</body>
+</html>
