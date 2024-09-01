@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    </head>
+    <script>
+        //wait until doc is loaded before running any jQuery
+        $(document).ready(function() {
+            //selects the HTML element to append content
+            $("html").append(
+                //content to be added to HTML element
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='1'>Paragraph 1</p>\
+                            <p id='2'>Paragraph 2</p>\
+                            <p id='3'>Paragraph 3</p>\
+                            </div>\
+                            </div>\
+                            </body>"
+            );
+            //using jQuery to add CSS to the HTML element with id
+            $ ("#2").css({"color":"red"});
+            //click function to hide the h1 element with id=3 is clicked
+            $ ("#3").click(function() {
+                $("h1").hide();
+            });
+        });
+    </script>
+</html>
